@@ -1,5 +1,10 @@
 :root {
   --page-background-image: url(/images/cover-image-dark.png);
   --page-background-color: #00043a;
+  --page-button-color: #FF0070;
+  --page-decor-color: #FF0070;
+  --subtitle-bg-color: #FF0070;
+  --page-text-main-color: #DB00FF;
+  --page-shadow-main-color: #FF0070;
   --header-min-height: 668px;
 }

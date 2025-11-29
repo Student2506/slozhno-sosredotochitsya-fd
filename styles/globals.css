@@ -33,6 +33,10 @@ picture {
   padding: 0;
 }
 
+button {
+  all: unset;
+}
+
 button,
 a {
   color: currentColor;
@@ -40,3 +44,4 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
