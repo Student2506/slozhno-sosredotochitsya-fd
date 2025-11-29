@@ -8,7 +8,7 @@
   background-attachment: fixed;
   background-color: var(--page-background-color);
   padding: 10px;
-  font-family: "IBM Plex mono", monospace;
+  font-family: 'IBM Plex mono', monospace;
   position: relative;
 }
 
@@ -49,7 +49,6 @@
   color: var(--page-decor-color);
 }
 
-
 .header__pseudo-element {
   position: absolute;
   top: 10px;
@@ -84,7 +83,6 @@
   flex-direction: column;
   gap: 10px;
   justify-self: end;
-
 }
 
 .header__theme-menu-button {
