@@ -6,5 +6,9 @@
   --subtitle-bg-color: #ff0070;
   --page-text-main-color: #db00ff;
   --page-shadow-main-color: #ff0070;
+  --article-title-main-color: #ff0070;
+  --article-subtitle-main-color: #000028;
+  --article-subtitle-bg-color: #ff0070;
+  --article-main-text-color: #f1b2ce;
   --header-min-height: 668px;
 }
