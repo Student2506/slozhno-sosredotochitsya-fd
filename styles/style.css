@@ -13,19 +13,27 @@
   display: grid;
   grid-template: 1fr min-content 1fr 0fr 0fr / 1fr;
   gap: 40px;
+  line-height: 1.3;
+  font-weight: 400;
 }
 
-.header {
-  min-height: var(--header-min-height);
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-  height: var(--header-max-height);
-}
 
 .header,
 .footer {
+  display: grid;
   position: relative;
+  grid-template: min-content 1fr min-content / 1fr;
+  min-block-size: var(--header-min-height);
+}
+
+.footer {
+  grid-template: 1fr / 1fr;
+}
+
+.header__title,
+.footer__title {
+  justify-self: center;
+  align-self: center;
 }
 
 .decorated-zone {
@@ -35,8 +43,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  top: 0;
-  right: -2px;
+  inset-block-start: 0;
+  inset-block-end: -2px;
   inline-size: 25px;
   block-size: 25px;
   background-image: url(../images/top-right-deco.svg);
@@ -49,8 +57,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 10px;
-  left: 0;
+  inset-block-end: 10px;
+  inset-inline-start: 0;
   inline-size: 25px;
   block-size: 25px;
   background-image: url(../images/bottom-left-deco.svg);
@@ -62,20 +70,19 @@
 }
 
 .header.decorated-zone::after {
-  bottom: 0;
+  inset-block-end: 0;
 }
 
 .footer.decorated-zone::before {
-  top: -10px;
+  inset-block-start: -10px;
 }
 
 .header__pseudo-element {
   position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 18px;
+  inset-block-start: 0;
+  inset-inline-end: 22px;
+
   line-height: 1.39;
-  font-weight: 400;
   color: var(--page-decor-color);
   text-transform: uppercase;
   pointer-events: none;
@@ -85,8 +92,8 @@
 .header__pseudo-element::after {
   content: '';
   position: absolute;
-  left: 100%;
-  top: 50%;
+  inset-inline-start: 100%;
+  inset-block-start: 50%;
   transform: translateY(-50%);
   inline-size: 18px;
   block-size: 18px;
@@ -105,9 +112,6 @@
 .header__theme-menu-button {
   background-color: transparent;
   color: var(--page-button-color);
-
-  font-weight: 400;
-  font-size: 18px;
   padding: 1.5px 13px;
 }
 
@@ -115,16 +119,23 @@
   border: 1px solid var(--page-button-color);
 }
 
+
 .footer__title > h1,
 .header__title > h1 {
+  display: inline-block;
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(
+    7.25rem,
+    calc(7.0115rem + 1.0178vw),
+    7.5rem)
+  ;
   color: var(--page-text-main-color);
+  text-align: left;
 }
 
 .footer__title > h1 {
   text-shadow: 2px 2px 0 var(--page-shadow-main-color);
-  line-height: var(--header-max-height);
+  line-height: 0.83;
 }
 
 .header__title > h1 {
@@ -135,9 +146,8 @@
 .header__subtitle {
   background-color: var(--subtitle-bg-color);
   font-weight: 700;
-  font-size: 18px;
   margin-block-end: 66px;
-  line-height: 1.3;
+  font-size: 18px;
 }
 
 .main {
@@ -147,11 +157,16 @@
   gap: 50px;
 }
 
+.article-reasons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
 .article-title {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.3;
   color: var(--article-title-main-color);
+  font-size: 18px;
 }
 
 .advices-for-better-concentration,
@@ -166,29 +181,24 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  font-size: 18px;
 }
 
 .article-subtitle {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.3;
   color: var(--article-subtitle-main-color);
   background-color: var(--article-subtitle-bg-color);
+  font-size: 18px;
 }
 
 .paragraph-title {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
   color: var(--article-subtitle-main-color);
   background-color: var(--article-subtitle-bg-color);
 }
 
 .article-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
   color: var(--article-main-text-color);
+  font-size: 18px;
 }
 
 .pictures {
