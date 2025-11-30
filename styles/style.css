@@ -129,6 +129,7 @@
 
 .header__title > h1 {
   text-shadow: 4px 4px 0 var(--page-shadow-main-color);
+  line-height: 0.83;
 }
 
 .header__subtitle {
