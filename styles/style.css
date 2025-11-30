@@ -17,7 +17,6 @@
   font-weight: 400;
 }
 
-
 .header,
 .footer {
   display: grid;
@@ -44,7 +43,7 @@
   content: '';
   position: absolute;
   inset-block-start: 0;
-  inset-block-end: -2px;
+  inset-inline-end: -2px;
   inline-size: 25px;
   block-size: 25px;
   background-image: url(../images/top-right-deco.svg);
@@ -119,16 +118,11 @@
   border: 1px solid var(--page-button-color);
 }
 
-
 .footer__title > h1,
 .header__title > h1 {
   display: inline-block;
   font-weight: 700;
-  font-size: clamp(
-    7.25rem,
-    calc(7.0115rem + 1.0178vw),
-    7.5rem)
-  ;
+  font-size: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
   color: var(--page-text-main-color);
   text-align: left;
 }
