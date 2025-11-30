@@ -118,7 +118,7 @@
   border: 1px solid var(--page-button-color);
 }
 
-.footer__title > h1,
+.footer__title > p,
 .header__title > h1 {
   display: inline-block;
   font-weight: 700;
@@ -127,7 +127,7 @@
   text-align: left;
 }
 
-.footer__title > h1 {
+.footer__title > p {
   text-shadow: 2px 2px 0 var(--page-shadow-main-color);
   line-height: 0.83;
 }
@@ -188,6 +188,7 @@
 .paragraph-title {
   color: var(--article-subtitle-main-color);
   background-color: var(--article-subtitle-bg-color);
+  font-weight: 400;
 }
 
 .article-text {
@@ -203,4 +204,18 @@
 
 .pictures img {
   inline-size: 100%;
+}
+
+.text-link {
+  text-shadow: 2px 2px 0 var(--page-shadow-main-color);
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.text-link:focus {
+  border: 1px solid var(--article-main-text-color);
+  text-decoration: none;
 }
