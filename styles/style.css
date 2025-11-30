@@ -330,4 +330,37 @@
 }
 
 @media (width >= 1024px) {
+
+  .header__theme-menu {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .header__theme-menu-list {
+    margin-block-start: 0;
+    flex-direction: row;
+    justify-self: center;
+  }
+
+  .header__subtitle {
+    margin-block-end: 134px;
+  }
+
+  .reasons-for-low-concentration {
+    grid-template: repeat(3, min-content) / repeat(3, 1fr);
+  }
+
+  .reasons-for-low-concentration .article-title {
+    grid-column: span 3;
+  }
+
+  .reasons-for-low-concentration .article-subtitle {
+    grid-column: span 1;
+    grid-row: 2;
+  }
+
+  .reasons-for-low-concentration .article-text {
+    grid-column: span 1;
+    grid-row: 3;
+  }
 }
