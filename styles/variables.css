@@ -20,10 +20,9 @@
 
 @media (min-width: 768px) {
 
-  :root{
+  :root {
     --font-size-header: clamp(7.5rem, calc(0.5625rem + 14.4531vw), 9.8125rem);
   }
-
 }
 
 @media (min-width: 992px) {
