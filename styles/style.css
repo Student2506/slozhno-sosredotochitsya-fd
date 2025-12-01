@@ -127,6 +127,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--page-button-color);
+  pointer-events: none;
 }
 
 .footer__title > p,

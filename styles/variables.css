@@ -15,7 +15,7 @@
   --font-size-header: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
 }
 
-.theme-dark:root {
+:root.theme-dark {
   --page-background-image: url(/images/cover-image-dark.png);
   --page-background-color: #00043a;
   --page-button-color: #ff0070;
@@ -29,13 +29,11 @@
   --article-main-text-color: #f1b2ce;
   --header-min-height: calc(100vh - 20px);
   --header-max-height: calc(100vh - 20px);
-  --font-size-header: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
 }
 
 @media (prefers-color-scheme: dark) {
 
-  .theme-light:root,
-  :root {
+  :root.theme-light {
     --page-background-image: url(/images/cover-image-light.png);
     --page-background-color: #fff1f7;
     --page-button-color: #353430;
@@ -49,10 +47,9 @@
     --article-main-text-color: #353430;
     --header-min-height: calc(100vh - 20px);
     --header-max-height: calc(100vh - 20px);
-    --font-size-header: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
   }
 
-  .theme-auto:root {
+  :root.theme-auto {
     --page-background-image: url(/images/cover-image-dark.png);
     --page-background-color: #00043a;
     --page-button-color: #ff0070;
@@ -66,7 +63,6 @@
     --article-main-text-color: #f1b2ce;
     --header-min-height: calc(100vh - 20px);
     --header-max-height: calc(100vh - 20px);
-    --font-size-header: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
   }
 
   .header__pseudo-element {
@@ -76,7 +72,7 @@
 
 @media (prefers-color-scheme: light) {
 
-  .theme-light:root,
+  :root.theme-light,
   :root {
     --page-background-image: url(/images/cover-image-light.png);
     --page-background-color: #fff1f7;
@@ -91,12 +87,15 @@
     --article-main-text-color: #353430;
     --header-min-height: calc(100vh - 20px);
     --header-max-height: calc(100vh - 20px);
-    --font-size-header: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
   }
 
   .header__pseudo-element {
     display: none;
   }
+}
+
+:root.theme-light .header__pseudo-element {
+  display: none;
 }
 
 @media (min-width: 576px) {
