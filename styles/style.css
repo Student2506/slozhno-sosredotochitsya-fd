@@ -21,7 +21,7 @@
 .footer {
   display: grid;
   position: relative;
-  min-block-size: var(--header-min-height);
+  block-size: 100vh;
 }
 
 .header {
