@@ -47,9 +47,6 @@
   align-self: center;
 }
 
-.decorated-zone {
-  max-block-size: var(--header-max-height);
-}
 
 .decorated-zone::before {
   content: '';
