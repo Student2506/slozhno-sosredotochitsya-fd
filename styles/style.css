@@ -9,7 +9,6 @@
   background-color: var(--page-background-color);
   font-family: 'IBM Plex mono', monospace;
   position: relative;
-  padding: 10px;
   display: grid;
   grid-template: 1fr min-content 1fr / 1fr;
   gap: 20px;
@@ -22,14 +21,17 @@
   display: grid;
   position: relative;
   block-size: 100vh;
+  margin: 0 10px;
 }
 
 .header {
   grid-template: min-content 1fr min-content / 1fr 1fr;
+  margin-top: 10px;
 }
 
 .footer {
   grid-template: 1fr / 1fr;
+  margin-bottom: 10px;
 }
 
 .header__title {
@@ -169,6 +171,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
+  margin: 0 10px;
 }
 
 .article-reasons {
