@@ -7,7 +7,6 @@
   background-position: center center;
   background-attachment: fixed;
   background-color: var(--page-background-color);
-  padding: 10px;
   font-family: 'IBM Plex mono', monospace;
   position: relative;
   display: grid;
