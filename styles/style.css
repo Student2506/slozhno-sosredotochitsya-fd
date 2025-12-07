@@ -40,7 +40,7 @@
 }
 
 .footer__title {
-  margin-block-start: 25px;
+  margin-block-start: 40px;
 }
 
 .header__title,
@@ -66,7 +66,7 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  inset-block-end: 10px;
+  inset-block-end: -10px;
   inset-inline-start: 0;
   inline-size: 25px;
   block-size: 25px;
@@ -79,18 +79,18 @@
 }
 
 .header.decorated-zone::after {
-  inset-block-end: 0;
+  inset-block-end: 16px;
 }
 
 .footer.decorated-zone::before {
-  inset-block-start: -10px;
+  inset-block-start: 30px;
 }
 
 .header__pseudo-element {
   position: absolute;
   inset-block-start: 0;
-  inset-inline-end: 30px;
-
+  inset-inline-end: 29px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--page-decor-color);
   text-transform: uppercase;
@@ -115,10 +115,10 @@
 }
 
 .header__theme-menu-list {
-  margin-block-start: 62px;
+  margin-block-start: 66px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   justify-self: end;
   text-transform: lowercase;
 }
