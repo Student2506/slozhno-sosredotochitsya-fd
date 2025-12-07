@@ -265,7 +265,7 @@
   .header.decorated-zone::after {
     inset-block-end: 28px;
     inset-inline-start: 20px;
-}
+  }
 
   .header__pseudo-element {
     inset-inline-end: 40px;
@@ -395,9 +395,15 @@
 
 @media (width >= 1024px) {
 
+  .header {
+    grid-template: 1fr 2fr min-content / 1fr 1fr;
+  }
+
   .header__theme-menu {
     grid-column: span 2;
     grid-row: 1;
+    margin-inline-start: 20px;
+    margin-block-start: 8px;
   }
 
   .header__theme-menu-list {
@@ -406,26 +412,50 @@
     justify-self: center;
   }
 
+  .header__pseudo-element {
+    inset-block-start: 8px;
+  }
 
   .header__subtitle {
-    margin-block-end: 134px;
+    margin-block-end: 145px;
+  }
+
+  .reasons-for-hard-concentration {
+    column-gap: 10px;
   }
 
   .reasons-for-low-concentration {
-    grid-template: repeat(3, min-content) / repeat(3, 1fr);
+    grid-template: repeat(2, min-content) / repeat(3, 1fr);
+    row-gap: 0;
   }
 
-  .reasons-for-low-concentration .article-title {
-    grid-column: span 3;
+  .reasons-for-low-concentration .article-low_concentration {
+    grid-row: 2;
+    grid-column: span 1;
+    grid-template: min-content min-content / 1fr;
   }
 
   .reasons-for-low-concentration .article-subtitle {
     grid-column: span 1;
     grid-row: 2;
+    margin-block-start: 10px;
   }
 
   .reasons-for-low-concentration .article-text {
     grid-column: span 1;
     grid-row: 3;
+  }
+
+  .advices-for-better-concentration {
+    column-gap: 10px;
+  }
+
+  .footer.decorated-zone::before {
+    inset-block-start: 60px;
+  }
+
+  .footer.decorated-zone::after {
+    inset-inline-start: 10px;
+    inset-block-end: -20px;
   }
 }
