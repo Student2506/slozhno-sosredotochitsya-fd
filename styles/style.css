@@ -9,6 +9,7 @@
   background-color: var(--page-background-color);
   font-family: 'IBM Plex mono', monospace;
   position: relative;
+  padding: 10px;
   display: grid;
   grid-template: 1fr min-content 1fr 0fr 0fr / 1fr;
   gap: 40px;
