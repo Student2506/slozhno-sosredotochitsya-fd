@@ -37,6 +37,10 @@
   margin-block-start: 10px;
 }
 
+.footer__title {
+  margin-block-start: 25px;
+}
+
 .header__title,
 .footer__title {
   justify-self: center;
