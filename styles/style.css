@@ -142,7 +142,7 @@
 .header__title > h1 {
   display: inline-block;
   font-weight: 700;
-  font-size: var(--font-size-header);
+  font-size: var(--font-size-title);
   color: var(--page-text-main-color);
   text-align: left;
 }
