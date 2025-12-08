@@ -27,12 +27,14 @@
   grid-template: min-content 1fr min-content / 1fr 1fr;
   margin-block-start: 10px;
   block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .footer {
   grid-template: 1fr / 1fr;
   margin-block-end: 10px;
   block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .header__title {
