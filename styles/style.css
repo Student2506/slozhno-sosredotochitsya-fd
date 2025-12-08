@@ -134,7 +134,7 @@
   padding: 0 13px 2px;
 }
 
-.header__theme-menu-button-active {
+.header__theme-menu-button_active {
   pointer-events: none;
   border: 1px solid var(--page-button-color);
 }
@@ -278,11 +278,11 @@
     margin-inline-end: 10px;
   }
 
-  .header__theme-menu-item:has(button.header__theme-menu-button-active) {
+  .header__theme-menu-item:has(button.header__theme-menu-button_active) {
     margin-block-start: 2px;
   }
 
-  .header__theme-menu-button-active {
+  .header__theme-menu-button_active {
     line-height: 1.1;
   }
 
