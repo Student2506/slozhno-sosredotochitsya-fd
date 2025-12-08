@@ -96,6 +96,7 @@
   text-transform: uppercase;
   pointer-events: none;
   z-index: 10;
+  visibility: var(--visiblity-of-pseudo-element);
 }
 
 .header__pseudo-element::after {
@@ -133,7 +134,7 @@
   padding: 0 13px 2px;
 }
 
-.header__theme-menu-button_active {
+.header__theme-menu-button-active {
   pointer-events: none;
   border: 1px solid var(--page-button-color);
 }

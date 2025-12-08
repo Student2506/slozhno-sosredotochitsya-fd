@@ -13,13 +13,7 @@
   --header-min-height: calc(100vh - 20px);
   --header-max-height: calc(100vh - 20px);
   --font-size-title: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
-}
-
-
-
-
-:root.theme-light .header__pseudo-element {
-  visibility: hidden;
+  --visiblity-of-pseudo-element: visible;
 }
 
 @media (min-width: 768px) {

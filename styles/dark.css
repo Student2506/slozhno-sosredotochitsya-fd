@@ -12,6 +12,7 @@
   --article-main-text-color: #f1b2ce;
   --header-min-height: calc(100vh - 20px);
   --header-max-height: calc(100vh - 20px);
+  --visiblity-of-pseudo-element: visible;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,25 +31,7 @@
     --article-main-text-color: #353430;
     --header-min-height: calc(100vh - 20px);
     --header-max-height: calc(100vh - 20px);
+    --visiblity-of-pseudo-element: visible;
   }
 
-  :root.theme-auto {
-    --page-background-image: url(../images/cover-image-dark.png);
-    --page-background-color: #00043a;
-    --page-button-color: #ff0070;
-    --page-decor-color: #ff0070;
-    --subtitle-bg-color: #ff0070;
-    --page-text-main-color: #db00ff;
-    --page-shadow-main-color: #ff0070;
-    --article-title-main-color: #ff0070;
-    --article-subtitle-main-color: #000028;
-    --article-subtitle-bg-color: #ff0070;
-    --article-main-text-color: #f1b2ce;
-    --header-min-height: calc(100vh - 20px);
-    --header-max-height: calc(100vh - 20px);
-  }
-
-  .header__pseudo-element {
-    visibility: visible;
-  }
 }

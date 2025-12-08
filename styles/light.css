@@ -12,6 +12,7 @@
   --article-main-text-color: #353430;
   --header-min-height: calc(100vh - 20px);
   --header-max-height: calc(100vh - 20px);
+  --visiblity-of-pseudo-element: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,9 +32,6 @@
     --article-main-text-color: #353430;
     --header-min-height: calc(100vh - 20px);
     --header-max-height: calc(100vh - 20px);
-  }
-
-  .header__pseudo-element {
-    visibility: hidden;
+    --visiblity-of-pseudo-element: hidden;
   }
 }
