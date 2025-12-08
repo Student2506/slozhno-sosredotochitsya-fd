@@ -95,10 +95,12 @@
   inset-inline-start: 130%;
   inset-block-start: 50%;
   transform: translateY(-50%);
-  inline-size: 18px;
-  block-size: 18px;
-  background-image: url(../images/ellipse.svg);
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: #FF0070;
   background-size: contain;
+  box-shadow: 0 0 4px 2px #FF0070;
 }
 
 .header__theme-menu {
