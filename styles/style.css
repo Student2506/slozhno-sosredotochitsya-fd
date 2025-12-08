@@ -20,18 +20,19 @@
 .footer {
   display: grid;
   position: relative;
-  block-size: 100vh;
   margin: 0 10px;
 }
 
 .header {
   grid-template: min-content 1fr min-content / 1fr 1fr;
-  margin-top: 10px;
+  margin-block-start: 10px;
+  block-size: 100vh;
 }
 
 .footer {
   grid-template: 1fr / 1fr;
   margin-block-end: 10px;
+  block-size: 100vh;
 }
 
 .header__title {
