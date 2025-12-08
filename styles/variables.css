@@ -1,5 +1,5 @@
 :root {
-  --page-background-image: url(/images/cover-image-dark.png);
+  --page-background-image: url(../images/cover-image-dark.png);
   --page-background-color: #00043a;
   --page-button-color: #ff0070;
   --page-decor-color: #ff0070;
@@ -16,7 +16,7 @@
 }
 
 :root.theme-dark {
-  --page-background-image: url(/images/cover-image-dark.png);
+  --page-background-image: url(../images/cover-image-dark.png);
   --page-background-color: #00043a;
   --page-button-color: #ff0070;
   --page-decor-color: #ff0070;
@@ -34,7 +34,7 @@
 @media (prefers-color-scheme: dark) {
 
   :root.theme-light {
-    --page-background-image: url(/images/cover-image-light.png);
+    --page-background-image: url(../images/cover-image-light.png);
     --page-background-color: #fff1f7;
     --page-button-color: #353430;
     --page-decor-color: #ff0070;
@@ -50,7 +50,7 @@
   }
 
   :root.theme-auto {
-    --page-background-image: url(/images/cover-image-dark.png);
+    --page-background-image: url(../images/cover-image-dark.png);
     --page-background-color: #00043a;
     --page-button-color: #ff0070;
     --page-decor-color: #ff0070;
@@ -74,7 +74,7 @@
 
   :root.theme-light,
   :root {
-    --page-background-image: url(/images/cover-image-light.png);
+    --page-background-image: url(../images/cover-image-light.png);
     --page-background-color: #fff1f7;
     --page-button-color: #353430;
     --page-decor-color: #ff0070;
