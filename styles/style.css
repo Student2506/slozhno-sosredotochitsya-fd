@@ -122,6 +122,7 @@
   background-color: transparent;
   color: var(--page-button-color);
   padding: 0 13px 2px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
