@@ -1,7 +1,7 @@
 :root.theme-light {
   --page-background-image: url(../images/cover-image-light.png);
   --page-background-color: #fff1f7;
-  --page-button-color: #353430;
+  --page-button-color: 53 52 48;
   --page-decor-color: #ff0070;
   --subtitle-bg-color: #ff8dcb;
   --page-text-main-color: #ffc2e6;
@@ -21,7 +21,7 @@
   :root {
     --page-background-image: url(../images/cover-image-light.png);
     --page-background-color: #fff1f7;
-    --page-button-color: #353430;
+    --page-button-color: 53 52 48;
     --page-decor-color: #ff0070;
     --subtitle-bg-color: #ff8dcb;
     --page-text-main-color: #ffc2e6;
