@@ -34,6 +34,12 @@
 .header__title {
   grid-area: 2 / 1 / 2 / 3;
   margin-block-start: 10px;
+  text-shadow: 4px 4px 0 var(--page-shadow-main-color);
+  line-height: 0.83;
+  font-weight: 700;
+  font-size: var(--font-size-title);
+  color: var(--page-text-main-color);
+  text-align: left;
 }
 
 
@@ -132,15 +138,6 @@
   border: 1px solid var(--page-button-color);
 }
 
-.header__title > h1 {
-  text-shadow: 4px 4px 0 var(--page-shadow-main-color);
-  line-height: 0.83;
-  font-weight: 700;
-  font-size: var(--font-size-title);
-  color: var(--page-text-main-color);
-  text-align: left;
-}
-
 .header__subtitle {
   background-color: var(--subtitle-bg-color);
   color: var(--article-subtitle-main-color);
@@ -169,9 +166,7 @@
   font-size: 18px;
 }
 
-.advices-for-better-concentration,
-.reasons-for-low-concentration,
-.reasons-for-hard-concentration {
+.common {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -316,7 +311,7 @@
     grid-area: 1 / 1 / 2 / 2;
   }
 
-  .article-low_concentration {
+  .reasons-for-low-concentration > .article {
     grid-column: 1 / 5;
   }
 
@@ -422,7 +417,7 @@
     row-gap: 0;
   }
 
-  .reasons-for-low-concentration .article-low_concentration {
+  .reasons-for-low-concentration .article {
     grid-row: 2;
     grid-column: span 1;
     grid-template: min-content min-content / 1fr;
