@@ -294,9 +294,12 @@
   }
 
   .main {
-    padding-block-start: 30px;
     padding-inline-end: 10px;
-    gap: 80px;
+    gap: 60px;
+  }
+
+  .common {
+    margin-block-start: 20px;
   }
 
   .reasons-for-hard-concentration {
@@ -382,9 +385,25 @@
     margin-block-start: 80px;
   }
 
+  .footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+
   .footer.decorated-zone::after {
-    inset-block-end: 10px;
     inset-inline-start: 10px;
+    inset-block-end: 0;
+  }
+
+  .footer.decorated-zone::before {
+    inset-block-start: 40px;
+  }
+
+  .footer__paragraph {
+    margin-block-start: 40px;
   }
 }
 
