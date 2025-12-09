@@ -335,7 +335,7 @@
     grid-auto-flow: dense;
     gap: 20px;
     margin-inline-start: 10px;
-    margin-block-start: -20px;
+    margin-block-start: 0;
   }
 
   .pictures > .article-subtitle {
