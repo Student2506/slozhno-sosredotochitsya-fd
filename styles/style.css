@@ -59,8 +59,8 @@
   background: transparent;
   background-size: contain;
   background-repeat: no-repeat;
-  border-block-start: 1px solid var(--page-button-color);
-  border-inline-end: 1px solid var(--page-button-color);
+  border-block-start: 1px solid rgb(var(--page-button-color));
+  border-inline-end: 1px solid rgb(var(--page-button-color));
   z-index: 9999;
   color: var(--page-decor-color);
 }
@@ -75,8 +75,8 @@
   background: transparent;
   background-size: contain;
   background-repeat: no-repeat;
-  border-block-end: 1px solid var(--page-button-color);
-  border-inline-start: 1px solid var(--page-button-color);
+  border-block-end: 1px solid rgb(var(--page-button-color));
+  border-inline-start: 1px solid rgb(var(--page-button-color));
   z-index: 9999;
   display: inline-block;
   color: var(--page-decor-color);
