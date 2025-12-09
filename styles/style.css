@@ -206,7 +206,8 @@
 }
 
 .text-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid var(--article-main-text-color);
 }
 
 .text-link:focus {
