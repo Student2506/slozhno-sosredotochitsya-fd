@@ -46,7 +46,7 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  inset-block-start: 10;
+  inset-block-start: 0;
   inset-inline-end: 0;
   inline-size: 25px;
   block-size: 25px;
@@ -237,21 +237,24 @@
   grid-template: 1fr / 1fr;
   block-size: 100vh;
   min-block-size: 668px;
-}
-
-
-.footer__title {
   margin-block-start: 40px;
+  display: flex;
+  align-items: center;
 }
 
-.footer__title > p {
+
+.footer.decorated-zone::before {
+  inset-block-start: 10px;
+}
+
+.footer > p {
   text-shadow: 2px 2px 0 var(--page-shadow-main-color);
   line-height: 0.83;
   display: inline-block;
   font-weight: 700;
   font-size: var(--font-size-title);
   color: var(--page-text-main-color);
-  text-align: left;
+  text-align: center;
 }
 
 
