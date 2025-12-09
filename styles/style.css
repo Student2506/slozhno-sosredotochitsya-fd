@@ -237,7 +237,7 @@
 }
 
 .footer > p {
-  text-shadow: 2px 2px 0 var(--page-shadow-main-color);
+  text-shadow: 2px 2px 0 var(--page-decor-color);
   line-height: 0.83;
   display: inline-block;
   font-weight: 700;
