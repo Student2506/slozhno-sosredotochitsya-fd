@@ -463,13 +463,4 @@
   .advices-for-better-concentration {
     column-gap: 10px;
   }
-
-  .footer.decorated-zone::before {
-    inset-block-start: 20px;
-  }
-
-  .footer.decorated-zone::after {
-    inset-inline-start: 10px;
-    inset-block-end: 10px;
-  }
 }
