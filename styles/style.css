@@ -249,6 +249,7 @@
   font-size: var(--font-size-title);
   color: var(--page-text-main-color);
   text-align: center;
+  margin-inline-start: 4px;
 }
 
 
