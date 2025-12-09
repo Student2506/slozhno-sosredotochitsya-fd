@@ -157,23 +157,10 @@
   margin: 0 10px;
 }
 
-.article-reasons {
+.article {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-}
-
-.article-low_concentration {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.article-advice {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-
 }
 
 .article-title {
@@ -189,10 +176,6 @@
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
-
-
-
 
 .article-subtitle {
   font-weight: 700;
