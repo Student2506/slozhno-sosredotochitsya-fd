@@ -10,8 +10,6 @@
   --article-subtitle-main-color: #000028;
   --article-subtitle-bg-color: #ff0070;
   --article-main-text-color: #f1b2ce;
-  --header-min-height: calc(100vh - 20px);
-  --header-max-height: calc(100vh - 20px);
   --font-size-title: clamp(7.25rem, calc(7.0115rem + 1.0178vw), 7.5rem);
   --visiblity-of-pseudo-element: visible;
 }
