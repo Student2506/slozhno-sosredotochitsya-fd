@@ -421,8 +421,11 @@
     row-gap: 0;
   }
 
+  .reasons-for-low-concentration .article-title {
+    grid-column: 1 / -1;
+  }
+
   .reasons-for-low-concentration .article {
-    grid-row: 2;
     grid-column: span 1;
     grid-template: min-content min-content / 1fr;
   }
