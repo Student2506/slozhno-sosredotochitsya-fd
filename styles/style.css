@@ -231,10 +231,6 @@
   place-items: center;
 }
 
-.footer.decorated-zone::before {
-  inset-block-start: 10px;
-}
-
 .footer__paragraph {
   text-shadow: 2px 2px 0 var(--page-decor-color);
   line-height: 0.83;
