@@ -415,7 +415,7 @@
   }
 
   .header__subtitle {
-    margin-block-end: 145px;
+    margin-block-end: 125px;
   }
 
   .reasons-for-hard-concentration {
@@ -423,16 +423,26 @@
   }
 
   .reasons-for-low-concentration {
-    grid-template: repeat(2, min-content) / repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    grid-auto-flow: row;
     row-gap: 0;
   }
 
   .reasons-for-low-concentration .article-title {
-    grid-column: 1 / -1;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .two-thirds {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
   }
 
   .reasons-for-low-concentration .article {
-    grid-column: span 1;
+
+    grid-column: unset;
     grid-template: min-content min-content / 1fr;
   }
 
