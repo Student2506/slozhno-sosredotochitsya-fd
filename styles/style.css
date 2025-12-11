@@ -300,19 +300,17 @@
   }
 
   .main {
+    margin-block-start: 30px;
     padding-block-end: 30px;
     padding-inline-end: 10px;
     gap: 60px;
   }
 
-  .common {
-    margin-block-start: 20px;
-  }
-
   .reasons-for-hard-concentration {
-    grid-template: 1fr 1fr / 1fr 2fr;
+    grid-template: 1fr / 1fr 2fr;
     column-gap: 20px;
     margin-inline-start: 10px;
+
   }
 
   .reasons-for-hard-concentration > .article-title {
@@ -320,30 +318,23 @@
   }
 
   .reasons-for-low-concentration {
-    grid-template: repeat(4, min-content) / repeat(4, 1fr);
+    grid-template: repeat(2, min-content) / repeat(4, 1fr);
     margin-inline-start: 10px;
+    margin-block-start: 0;
   }
 
-  .reasons-for-low-concentration > .article-title {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-
-  .reasons-for-low-concentration > .article {
-    grid-column: 1 / 5;
-  }
-
-  .reasons-for-low-concentration > .article-text,
-  .reasons-for-low-concentration > .article-subtitle {
-    grid-column: 1 / 5;
+  .reasons-for-low-concentration__article-list {
+    grid-area: 2 / 1 / auto / 5;
   }
 
   .advices-for-better-concentration {
     grid-template: min-content / 1fr 2fr;
     margin-inline-start: 10px;
+    margin-block-start: 20px;
   }
 
   .advices-for-better-concentration > .article-title {
-    grid-area: 1 / 1 / 8 / 1;
+    grid-area: 1 / 1 / 3 / 1;
   }
 
   .pictures {
@@ -351,7 +342,7 @@
     grid-auto-flow: dense;
     gap: 20px;
     margin-inline-start: 10px;
-    margin-block-start: 0;
+    margin-block-start: 20px;
   }
 
   .pictures > .article-subtitle {
@@ -392,6 +383,7 @@
     grid-template-rows: none;
     margin-inline-start: 0;
     min-block-size: 100vh;
+    margin-block-start: 30px;
   }
 
   .footer__paragraph {
