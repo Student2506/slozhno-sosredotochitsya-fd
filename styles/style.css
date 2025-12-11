@@ -248,7 +248,7 @@
     margin: 0;
     margin-inline-end: 10px;
     margin-block-start: 10px;
-    max-height: calc(100vh - 20px);
+    min-block-size: 100vh;
   }
 
   .decorated-zone::before {
@@ -257,7 +257,7 @@
   }
 
   .decorated-zone::after {
-    inset-block-end: 10px;
+    inset-block-end: 30px;
     inset-inline-start: 20px;
   }
 
@@ -279,18 +279,17 @@
     justify-self: start;
     grid-area: 2 / 1 / 2 / 3;
     margin-inline-start: 0;
-    margin-block-start: 10px;
+    margin-block-start: 14px;
   }
 
   .header__subtitle {
     grid-area: 3 / 2 / 3 / 2;
-    margin-block-end: 174px;
+    margin-block-end: 193px;
     margin-inline-end: 10px;
     margin-inline-start: 5px;
   }
 
   .main {
-    padding-block-start: 20px;
     padding-block-end: 30px;
     padding-inline-end: 10px;
     gap: 60px;
@@ -382,12 +381,12 @@
     grid-template-columns: none;
     grid-template-rows: none;
     margin-inline-start: 0;
-    block-size: calc(100vh - 20px);
+    min-block-size: 100vh;
   }
 
   .footer__paragraph {
-    margin-block-start: 10px;
-    margin-block-end: 10px;
+    margin-block-start: 0;
+    margin-block-end: 15px;
   }
 }
 
@@ -396,6 +395,7 @@
   .header {
     grid-template: 1fr 2fr min-content / 1fr 1fr;
   }
+
 
   .header__theme-menu {
     grid-column: span 2;
@@ -415,7 +415,7 @@
   }
 
   .header__subtitle {
-    margin-block-end: 125px;
+    margin-block-end: 145px;
   }
 
   .reasons-for-hard-concentration {
